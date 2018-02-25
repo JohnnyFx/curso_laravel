@@ -22,3 +22,12 @@ $router->post('client', 'ClientController@store');
 $router->get('client/{id}', 'ClientController@show');
 $router->put('client/{id}', 'ClientController@update');
 $router->delete('client/{id}', 'ClientController@destroy');
+
+$router->get('project/{id}/note', 'ProjectNoteController@index');
+
+$router->get('project', 'ProjectController@index');
+$router->post('project', 'ProjectController@store');
+$router->get('project/{id}', 'ProjectController@show');
+$router->put('project/{id}', 'ProjectController@update');
+$router->delete('project/{id}', 'ProjectController@destroy');
+
